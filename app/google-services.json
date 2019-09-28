@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "412632112133",
+    "firebase_url": "https://e-store-1.firebaseio.com",
+    "project_id": "e-store-1",
+    "storage_bucket": "e-store-1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:412632112133:android:2c8de1fe32d54e7c",
+        "android_client_info": {
+          "package_name": "com.example.estore"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "412632112133-4hr6bsci46suouqh92kroc4lobrdlmiu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBkXi67ADdbSTrzvn9IcYFAFnIeDRdiWTA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "412632112133-4hr6bsci46suouqh92kroc4lobrdlmiu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
