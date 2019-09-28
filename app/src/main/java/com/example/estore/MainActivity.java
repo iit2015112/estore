@@ -25,8 +25,6 @@ import android.view.Menu;
 import android.widget.FrameLayout;
 
 import java.util.Objects;
-//This is main activity
-//This is also main activity
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
@@ -40,16 +38,9 @@ public class MainActivity extends AppCompatActivity
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-//        if (MainActivity.this != null && (toolbar = getActivity().getSupportActionBar()) != null) {
-//            actionBar.setDisplayShowTitleEnabled(false);
-//        }
         if(getActionBar()!= null) {
             getActionBar().setDisplayHomeAsUpEnabled(true);
-
-//            getSupportActionBar().setDisplayShowTitleEnabled(false);
         }
-//        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-//        getSupportActionBar().setHomeButtonEnabled(true);
 
 
 
@@ -62,15 +53,9 @@ public class MainActivity extends AppCompatActivity
         navigationView.setNavigationItemSelectedListener(this);
         navigationView.getMenu().getItem(0).setChecked(true);
 
-//        frameLayout = findViewById(R.id.main_framelayout);
-//        HomeFragment homeFragment = new HomeFragment();
-//        setFragment(homeFragment);
 
         if (findViewById(R.id.main_framelayout) != null) {
 
-            // However, if we're being restored from a previous state,
-            // then we don't need to do anything and should return or else
-            // we could end up with overlapping fragments.
             if (savedInstanceState != null) {
                 return;
             }
@@ -78,12 +63,6 @@ public class MainActivity extends AppCompatActivity
             // Create a new Fragment to be placed in the activity layout
             SignInFragment firstFragment = new SignInFragment();
             FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-
-            // In case this activity was started with special instructions from an
-            // Intent, pass the Intent's extras to the fragment as arguments
-//            firstFragment.setArguments(getIntent().getExtras());
-
-            // Add the fragment to the 'fragment_container' FrameLayout
             transaction.add(R.id.register_framelayout, firstFragment).commit();
         }
     }
