@@ -25,7 +25,7 @@ import android.view.Menu;
 import android.widget.FrameLayout;
 
 import java.util.Objects;
-
+//This is main activity
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
